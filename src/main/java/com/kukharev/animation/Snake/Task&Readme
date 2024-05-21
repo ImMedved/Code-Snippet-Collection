@@ -1,0 +1,29 @@
+Task:
+This demo implements a snake of a given length by construction method and, after creation, prints it on the screen.
+The construction of the task also indicates the method of moving the snake in the selected direction. Implement “turtle graphics” mechanisms on the snake:
+- forward (integer number of steps)
+- turn left()
+- rotateRight();
+the last two simply change direction, the first moves the snake in the current direction in "steps" of steps.
+The "animation" performed must be controlled algorithmically, only by rendering the snake after each step. Follow the sequence:
+- forward(3) -> left() -> forward(2) -> right() -> forward(2)
+
+About:
+Direction.java: Enumeration for the directions of the snake's movement.
+Snake.java: Class for snake logic, including methods for turning and moving.
+SnakeVisualizerJavaFX.java & MainJavaFX.java: Visualize a snake using JavaFX.
+SnakeVisualizerAWT.java: Visualize a snake using AWT.
+SnakeVisualizerSwing.java: Visualize a snake using Swing.
+runSequence: Method for executing a sequence of movements and rendering after each step.
+
+Direction.java: Перечисление для направлений движения змейки.
+Snake.java: Класс для логики змейки, включая методы для поворота и движения.
+SnakeVisualizerJavaFX.java & MainJavaFX.java: Визуализация змейки с использованием JavaFX.
+SnakeVisualizerAWT.java: Визуализация змейки с использованием AWT.
+SnakeVisualizerSwing.java: Визуализация змейки с использованием Swing.
+runSequence: Метод для выполнения последовательности движений и визуализации после каждого шага.
+
+
+Addition:
+The snake game is implemented in the repository: https://github.com/ImMedved/JavaSnake
+Игра змейка реализована в репозитории: https://github.com/ImMedved/JavaSnake
