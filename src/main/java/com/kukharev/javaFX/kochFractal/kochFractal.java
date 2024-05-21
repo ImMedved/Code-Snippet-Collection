@@ -35,7 +35,7 @@ public class kochFractal extends Application {
 
     private static final int CANVAS_WIDTH = 800;
     private static final int CANVAS_HEIGHT = 800;
-    private static final int INITIAL_LEVEL = 4;
+    private static final int INITIAL_LEVEL = 7; //Change the argument to change fractal level (Number of sides, angles and parts)
 
     @Override
     public void start(Stage primaryStage) {
@@ -45,7 +45,7 @@ public class kochFractal extends Application {
         GraphicsContext gc = canvas.getGraphicsContext2D();
         gc.setStroke(Color.BLACK);
 
-        drawKochFractal(gc, 5, 100, 300, 700, 300); //Change the 2nd argument to change fractal level
+        drawKochFractal(gc, INITIAL_LEVEL, 100, 300, 700, 300);
 
         Pane root = new Pane();
         root.getChildren().add(canvas);
