@@ -13,9 +13,9 @@ public class DatabaseInserter {
     private static final String DB_URL = "jdbc:mysql://x.y.z.23:3306/your_database";
     private static final String USER = "your_username";
     private static final String PASS = "your_password";
-    private static final int INSERT_INTERVAL = 20000; // 20 секунд
-    private static final int DURATION = 200000; // 200 секунд
-    private static final String[] RANDOM_COMMENTS = {"комментарий1", "комментарий2", "комментарий3", "комментарий4", "комментарий5"};
+    private static final int INSERT_INTERVAL = 20000; // 20 sec
+    private static final int DURATION = 200000; // 200 sec
+    private static final String[] RANDOM_COMMENTS = {"comment1", "comment2", "comment3", "comment4", "comment5"};
 
     public static void main(String[] args) {
         Timer timer = new Timer();
@@ -38,7 +38,7 @@ public class DatabaseInserter {
             try {
                 Thread.sleep(DURATION);
                 int recordCount = countRecords();
-                System.out.println("Всего записей добавлено: " + recordCount);
+                System.out.println("Records added: " + recordCount);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -85,4 +85,3 @@ public class DatabaseInserter {
         return count;
     }
 }
-
